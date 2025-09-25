@@ -103,13 +103,13 @@ $ ruby app.rb
 THP-W4-D4-Morpion/
 │
 ├── lib/
-│   ├── app.rb         # Application class - main entry point
-│   ├── game.rb        # Game class - handles turns, win conditions, replay
-│   ├── player.rb      # Player class - stores name and symbol (X or O)
-│   ├── board.rb       # Board class - manages grid state
-│   ├── board_case.rb  # BoardCase class - represents each cell
-│   └── show.rb        # Show class - responsible for display
-│
-├── Gemfile            # Dependencies (optional: colorize)
+│   ├── app.rb
+│   ├── game.rb
+│   ├── player.rb
+│   ├── board.rb
+│   ├── board_case.rb  
+│   └── show.rb
+
+├── Gemfile
 ├── README.md
 └── LICENSE

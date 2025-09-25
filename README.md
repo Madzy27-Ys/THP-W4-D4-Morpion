@@ -92,10 +92,24 @@ Before starting :checkered_flag:, you need to have:
 $ git clone https://github.com/Madzy27-Ys/THP-W4-D4-Morpion.git
 
 # Access
-$ cd THP-W4-D4-Morpion
+$ cd morpion
 
 # Install dependencies (if Gemfile is present)
 $ bundle install
 
 # Run the project
 $ ruby app.rb
+
+THP-W4-D4-Morpion/
+│
+├── lib/
+│   ├── app.rb         # Application class - main entry point
+│   ├── game.rb        # Game class - handles turns, win conditions, replay
+│   ├── player.rb      # Player class - stores name and symbol (X or O)
+│   ├── board.rb       # Board class - manages grid state
+│   ├── board_case.rb  # BoardCase class - represents each cell
+│   └── show.rb        # Show class - responsible for display
+│
+├── Gemfile            # Dependencies (optional: colorize)
+├── README.md
+└── LICENSE

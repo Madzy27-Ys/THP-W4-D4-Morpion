@@ -1,98 +1,62 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="THP" />
+# 🕹️ Morpion — Projet THP W4 D4
 
-  &#xa0;
+Ce projet a été réalisé dans le cadre de la formation **The Hacking Project (THP)** lors de la **week 4, journée 4**.
 
-  <!-- <a href="https://thp.netlify.app">Demo</a> -->
-</div>
+---
 
-<h1 align="center">THP</h1>
+## :dart: À propos
 
-<p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/thp?color=56BEB8">
+Morpion (Tic-Tac-Toe) codé en **Ruby** avec une architecture orientée objet.  
+L’idée est de manipuler des classes, abstraire la logique du jeu, et offrir une interface console claire pour deux joueurs humains.
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/thp?color=56BEB8">
+---
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{YOUR_GITHUB_USERNAME}}/thp?color=56BEB8">
+## :sparkles: Fonctionnalités
 
-  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/thp?color=56BEB8">
+- Deux joueurs humains jouent en alternance.  
+- Le programme demande le prénom des joueurs au début.  
+- Le plateau est composé de 9 cases identifiées de “A1” à “C3”.  
+- À chaque tour, le plateau est affiché dans le terminal, et le joueur est invité à choisir une case.  
+- Détection automatique de victoire ou match nul.  
+- Si la partie est terminée, l’utilisateur peut choisir de rejouer.  
+- Efforts d’affichage stylé (bordures, clarté, éventuellement couleurs).
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/thp?color=56BEB8" /> -->
+---
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/thp?color=56BEB8" /> -->
+## :rocket: Technologies utilisées
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/thp?color=56BEB8" /> -->
-</p>
+- Ruby  
+- Bundler (gestion des gems)  
+- Gem « colorize » (optionnelle pour la coloration dans le terminal)
 
-<!-- Status -->
+---
 
-<!-- <h4 align="center"> 
-	🚧  THP 🚀 Under construction...  🚧
-</h4> 
-
-<hr> -->
-
-<p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
-</p>
-
-<br>
-
-## :dart: About ##
-
-Describe your project
-
-## :sparkles: Features ##
-
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
-
-## :rocket: Technologies ##
-
-The following tools were used in this project:
-
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-
-## :white_check_mark: Requirements ##
-
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
-
-## :checkered_flag: Starting ##
+## 🛠️ Installation & usage
 
 ```bash
-# Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/thp
+# Cloner le dépôt
+git clone https://github.com/Madzy27-Ys/THP-W4-D4-Morpion.git
 
-# Access
-$ cd thp
+# Aller dans le dossier du projet
+cd THP-W4-D4-Morpion
 
-# Install dependencies
-$ yarn
+# Installer les dépendances (si Gemfile présent)
+bundle install
 
-# Run the project
-$ yarn start
+# Lancer le jeu
+ruby app.rb
 
-# The server will initialize in the <http://localhost:3000>
-```
-
-## :memo: License ##
-
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
-
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
-
-&#xa0;
-
-<a href="#top">Back to top</a>
+THP-W4-D4-Morpion/
+│
+├── lib/
+│   ├── app.rb
+│   ├── game.rb
+│   ├── player.rb
+│   ├── board.rb
+│   ├── board_case.rb
+│   └── show.rb
+│
+├── Gemfile
+├── Gemfile.lock
+├── README.md
+└── .gitignore
